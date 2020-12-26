@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         cs = (View) findViewById(R.id.cs);
         cs.setOnTouchListener(new OnSwipeTouchListener(this) {
-            public void onSwipeLeft() {
+            public void onSwipeRight() {
                 Intent intent = new Intent(MainActivity.this, SecondScreen.class);
                 startActivity(intent);
             }
